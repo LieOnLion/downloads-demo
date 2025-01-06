@@ -3,12 +3,6 @@ import Mods from "../data/mods";
 import Counter from "./counter";
 import createModDownloads from "../hooks/createModDownloads";
 
-const headers = {
-	curseforge: {
-		"x-api-key": "$2a$10$X5BedJMwNKGRXoetXlscbOhfxNMZmSXiLDwMFvlHTMM0xqCa5pUvG",
-	},
-};
-
 const Downloads = () => {
 	const now = Date.now();
 	const localStorageDownloads = parseInt(localStorage.getItem("downloads"));
